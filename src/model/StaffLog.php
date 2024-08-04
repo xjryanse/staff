@@ -6,6 +6,5 @@ namespace xjryanse\staff\model;
  */
 class StaffLog extends Base
 {
-    
 
 }

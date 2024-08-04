@@ -1,67 +1,10 @@
 <?php
-
-namespace xjryanse\staff\service;
-
-use xjryanse\system\interfaces\MainModelInterface;
+namespace xjryanse\staff\service\log;
 
 /**
- * 员工违规登记
+ * 分页复用列表
  */
-class StaffBreakRulesService extends Base implements MainModelInterface {
-
-    use \xjryanse\traits\InstTrait;
-    use \xjryanse\traits\MainModelTrait;
-    use \xjryanse\traits\MainModelRamTrait;
-    use \xjryanse\traits\MainModelCacheTrait;
-    use \xjryanse\traits\MainModelCheckTrait;
-    use \xjryanse\traits\MainModelGroupTrait;
-    use \xjryanse\traits\MainModelQueryTrait;
-
-
-    protected static $mainModel;
-    protected static $mainModelClass = '\\xjryanse\\staff\\model\\StaffBreakRules';
-
-    /**
-     * 钩子-保存前
-     */
-    public static function extraPreSave(&$data, $uuid) {
-        
-    }
-
-    /**
-     * 钩子-保存后
-     */
-    public static function extraAfterSave(&$data, $uuid) {
-        
-    }
-
-    /**
-     * 钩子-更新前
-     */
-    public static function extraPreUpdate(&$data, $uuid) {
-        
-    }
-
-    /**
-     * 钩子-更新后
-     */
-    public static function extraAfterUpdate(&$data, $uuid) {
-        
-    }
-
-    /**
-     * 钩子-删除前
-     */
-    public function extraPreDelete() {
-        
-    }
-
-    /**
-     * 钩子-删除后
-     */
-    public function extraAfterDelete() {
-        
-    }
+trait FieldTraits{
 
     /**
      *
@@ -196,4 +139,5 @@ class StaffBreakRulesService extends Base implements MainModelInterface {
         return $this->getFFieldValue(__FUNCTION__);
     }
 
+    
 }
